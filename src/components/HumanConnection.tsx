@@ -31,13 +31,13 @@ export default function HumanConnection() {
             
             {/* Floating Emotional Label */}
             <motion.div 
-              initial={{ x: 20, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="absolute -bottom-6 -right-6 md:right-10 glass-card p-6 rounded-3xl border border-white/50 shadow-2xl max-w-[200px]"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="absolute -bottom-1 left-0 right-0 glass-card p-10 md:p-14 rounded-t-[4rem] border-t border-white/50 shadow-2xl z-20 flex flex-col items-center text-center"
             >
-              <p className="text-primary font-bold text-sm uppercase tracking-widest mb-2 font-inter">Compromiso</p>
-              <p className="text-slate font-bold font-outfit italic leading-tight">
+              <p className="text-primary font-bold text-sm uppercase tracking-[0.3em] mb-4 font-inter">Nuestro Compromiso</p>
+              <p className="text-slate text-2xl md:text-3xl font-bold font-outfit italic leading-tight max-w-md">
                 "Cuidamos su futuro como si fuera el nuestro"
               </p>
             </motion.div>

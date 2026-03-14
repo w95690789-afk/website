@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F766E;
+  --color-primary-dark: #0D5C56;
+  --color-primary-light: #14B8A6;
+  --color-secondary: #2DD4BF;
+  --color-accent: #F59E0B;
+  --color-clinical-white: #F8FAFC;
+  --color-slate: #334155;
+  
+  --font-outfit: var(--font-outfit);
+  --font-inter: var(--font-inter);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #334155;
+  --primary: #0F766E;
+  --secondary: #2DD4BF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #020617;
+    --foreground: #F8FAFC;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+@layer utilities {
+  .thumb-zone {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+}
+

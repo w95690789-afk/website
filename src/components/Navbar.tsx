@@ -33,9 +33,14 @@ export default function Navbar() {
           <a href="#" className="hover:text-primary transition-colors">Inicio</a>
           <a href="#servicios" className="hover:text-primary transition-colors">Servicios</a>
           <a href="#" className="hover:text-primary transition-colors">Especialistas</a>
-          <button className="px-8 py-3 bg-slate text-white rounded-xl font-bold hover:bg-primary transition-all active:scale-95 shadow-xl shadow-slate/5">
-            Agendar Ahora
-          </button>
+          <a 
+            href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-slate text-white rounded-xl font-bold font-outfit text-sm hover:bg-primary transition-all shadow-lg shadow-slate/10 active:scale-95"
+          >
+            Agendar Cita
+          </a>
         </div>
 
         <button className="md:hidden text-slate" onClick={() => setIsOpen(!isOpen)}>
@@ -55,9 +60,14 @@ export default function Navbar() {
               <a href="#" onClick={() => setIsOpen(false)}>Inicio</a>
               <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
               <a href="#" onClick={() => setIsOpen(false)}>Especialistas</a>
-              <button className="w-full py-4 bg-primary text-white rounded-xl font-bold">
+              <a 
+                href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-primary text-white rounded-xl font-bold text-center"
+              >
                 Agendar por WhatsApp
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

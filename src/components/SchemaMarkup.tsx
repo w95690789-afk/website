@@ -5,7 +5,7 @@ export default function SchemaMarkup() {
     name: "Ecomédica Centro Médico - Ecografías y Rayos X Teusaquillo",
     alternateName: "Ecomédica IPS",
     description:
-      "Centro de diagnóstico por imagen con tecnología GE HealthCare en Teusaquillo, Bogotá. Ecografías, rayos X digitales y salud ocupacional con resultados en 30 minutos.",
+      "Centro de diagnóstico por imagen con tecnología de vanguardia en Teusaquillo, Bogotá. Ecografías, rayos X digitales y salud ocupacional con resultados en 30 minutos.",
     url: "https://ecomedica.co",
     telephone: "+573245134768",
     email: "info@ecomedica.co",
@@ -24,8 +24,8 @@ export default function SchemaMarkup() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 4.6333,
-      longitude: -74.0722,
+      latitude: 4.6225,
+      longitude: -74.0708,
     },
     openingHoursSpecification: [
       {
@@ -51,7 +51,7 @@ export default function SchemaMarkup() {
       {
         "@type": "MedicalTest",
         name: "Ecografía Obstétrica",
-        description: "Ecografía obstétrica con equipos GE HealthCare de última generación",
+        description: "Ecografía obstétrica con equipos de alta resolución de última generación",
       },
       {
         "@type": "MedicalTest",
@@ -87,7 +87,7 @@ export default function SchemaMarkup() {
     "@id": "https://ecomedica.co/#business",
     name: "Ecomédica Centro Médico",
     description:
-      "Centro de diagnóstico médico en Teusaquillo, Bogotá. Ecografías de alta claridad, rayos X digitales y laboratorio clínico con tecnología GE HealthCare.",
+      "Centro de diagnóstico médico en Teusaquillo, Bogotá. Ecografías de alta claridad, rayos X digitales y laboratorio clínico con tecnología avanzada.",
     url: "https://ecomedica.co",
     telephone: "+573245134768",
     address: {
@@ -100,16 +100,16 @@ export default function SchemaMarkup() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 4.6333,
-      longitude: -74.0722,
+      latitude: 4.6225,
+      longitude: -74.0708,
     },
     hasMap: "https://maps.google.com/?cid=ECOMEDICA_CID",
     areaServed: {
       "@type": "GeoCircle",
       geoMidpoint: {
         "@type": "GeoCoordinates",
-        latitude: 4.6333,
-        longitude: -74.0722,
+        latitude: 4.6225,
+        longitude: -74.0708,
       },
       geoRadius: "7000",
     },

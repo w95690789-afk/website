@@ -5,34 +5,34 @@ import { Check, X } from "lucide-react";
 
 const comparison = [
   {
-    feature: "Tecnología de Imagen",
-    ecomedica: "GE HealthCare 2025",
-    others: "Equipos genéricos o refurbished",
+    feature: "Trámites y Orden Médica",
+    ecomedica: "Atención Particular Sin Orden Médica",
+    others: "Autorizaciones lentas y burocracia EPS",
   },
   {
     feature: "Tiempo de Entrega",
-    ecomedica: "30 minutos — mismo día",
-    others: "48h a 5 días hábiles",
+    ecomedica: "30 Minutos — Garantizado por reloj",
+    others: "Espera de 3 a 8 días hábiles",
   },
   {
-    feature: "Certificación de Resultados",
-    ecomedica: "Firmados por especialistas registrados",
-    others: "Sin firma o sin registro verificable",
+    feature: "Precisión en Imagen",
+    ecomedica: "Tecnología GE HealthCare (Nitidez 4K)",
+    others: "Equipos obsoletos con imágenes borrosas",
   },
   {
-    feature: "Atención al Paciente",
-    ecomedica: "Trato personalizado,<br/>cita sin espera",
-    others: "Filas, turnos y esperas prolongadas",
+    feature: "Costo Beneficio",
+    ecomedica: "Tarifa preferencial de $70.000 COP",
+    others: "Costos ocultos o copagos excesivos",
   },
   {
-    feature: "Seguridad de Datos",
-    ecomedica: "Cifrado hospitalario, HSTS",
-    others: "Sin política de datos clara",
+    feature: "Filas y Espera",
+    ecomedica: "Agendamiento hoy mismo (Sin Filas)",
+    others: "Salas colapsadas, esperas de 3 horas",
   },
   {
-    feature: "Canal de Agendamiento",
-    ecomedica: "WhatsApp con respuesta < 2 min",
-    others: "Llamadas sin contestar o correo lento",
+    feature: "Acceso a Resultados",
+    ecomedica: "Digitales al celular + Físicos firmados",
+    others: "Solo físico o CD difícil de leer",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Differentiator() {
             </div>
             <div className="text-center">
               <span className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm font-bold text-white/50 font-outfit">
-                Centros Genéricos
+                Sistemas Obsoletos
               </span>
             </div>
           </div>

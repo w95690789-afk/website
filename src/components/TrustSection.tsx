@@ -32,18 +32,18 @@ export default function TrustSection() {
             className="flex-1"
           >
             <h2 className="text-4xl md:text-6xl font-black font-outfit text-slate mb-8 leading-[1.1]">
-              Diagnóstico sin fisuras, <br />
-              trato <span className="text-primary italic">humano innegociable</span>.
+              Tu salud no puede <br />
+              <span className="text-primary italic">esperar al sistema</span>.
             </h2>
             <p className="text-xl text-slate/70 font-inter leading-relaxed mb-8">
-              No somos solo un centro de imágenes; somos el punto de inflexión en su recuperación. En Ecomédica, eliminamos la incertidumbre con tecnología <span className="text-primary font-bold">GE HealthCare</span> y un equipo que ve más allá de la pantalla.
+              No somos solo un centro de imágenes; somos la respuesta rápida que necesitas. En Ecomédica Teusaquillo, eliminamos la incertidumbre con tecnología de <span className="text-primary font-bold">última generación</span> y un equipo de radiólogos expertos que priorizan tu caso.
             </p>
             
             <div className="space-y-6 mb-12">
               {[
-                { title: "Placa de Veracidad", desc: "99.8% de Precisión Diagnóstica.", color: "bg-teal-500" },
-                { title: "Seguridad Médica", desc: "Datos protegidos bajo estándar hospitalario.", color: "bg-blue-600" },
-                { title: "Circuito Express", desc: "Entrega de resultados en 30 minutos.", color: "bg-secondary" }
+                { title: "Precisión Superior", desc: "99.8% de exactitud validada por médicos radiólogos y equipos de alta resolución.", color: "bg-teal-500" },
+                { title: "Seguridad Digital", desc: "Infraestructura digital encriptada. Sus resultados están protegidos, no en sistemas obsoletos.", color: "bg-blue-600" },
+                { title: "Circuito Express", desc: "Ciencia al servicio de su tiempo: resultados firmados y entregados en 30 minutos.", color: "bg-secondary" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-5 p-5 bg-white rounded-2xl border border-slate/5 shadow-sm hover:shadow-md transition-all">
                   <div className={`flex-shrink-0 w-3 h-3 rounded-full ${item.color} animate-pulse`} />

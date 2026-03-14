@@ -24,27 +24,35 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-xs font-bold tracking-widest text-primary uppercase">
-                Tecnología General Electric de Vanguardia
+                Tecnología Digital de Vanguardia
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-outfit mb-8 text-slate leading-[1.05] tracking-tight">
-              Su salud no <span className="text-primary italic">admite esperas.</span> <br />
-              Certeza clínica <span className="text-gradient">hoy mismo.</span>
+              ¿Sin orden médica? <br />
+              <span className="text-primary italic">Atención hoy</span> desde <span className="text-gradient">$70.000.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate/80 mb-12 max-w-2xl font-inter leading-relaxed">
-              En el eje médico de Teusaquillo, fusionamos la vanguardia de <span className="font-bold text-primary">General Electric</span> con el rigor diagnóstico que su caso exige. <span className="text-slate font-semibold italic"> Resultados definitivos en 30 minutos.</span>
+              No dejes tu diagnóstico para después. En Ecomédica Teusaquillo, realizamos tu <span className="font-bold text-primary">Ecografía Particular</span> con tecnología de alta gama y entregamos resultados firmados en <span className="text-slate font-semibold italic">solo 30 minutos.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5">
-              <button className="px-10 py-5 bg-primary text-white rounded-2xl font-bold text-xl hover:shadow-[0_20px_40px_rgba(15,118,110,0.3)] transition-all active:scale-95 group">
-                Agendar Ecografía
+              <a 
+                href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita%20prioritaria."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-5 bg-primary text-white rounded-2xl font-bold text-xl hover:shadow-[0_20px_40px_rgba(15,118,110,0.3)] transition-all active:scale-95 group flex items-center justify-center"
+              >
+                Asegurar mi turno prioritario
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </button>
-              <button className="px-10 py-5 bg-white/50 backdrop-blur-md shadow-xl shadow-slate/5 border border-slate/10 text-slate rounded-2xl font-bold text-xl hover:bg-slate hover:text-white transition-all">
+              </a>
+              <a 
+                href="#servicios"
+                className="px-10 py-5 bg-white/50 backdrop-blur-md shadow-xl shadow-slate/5 border border-slate/10 text-slate rounded-2xl font-bold text-xl hover:bg-slate hover:text-white transition-all flex items-center justify-center text-center"
+              >
                 Ver Especialidades
-              </button>
+              </a>
             </div>
 
             {/* Trust Indicators */}

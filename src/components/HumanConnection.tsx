@@ -56,14 +56,14 @@ export default function HumanConnection() {
               </div>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-outfit text-slate leading-tight mb-8">
-                Donde la <span className="text-primary italic">ciencia</span> <br />
-                abraza la <span className="text-gradient">vida.</span>
+                El final de la <span className="text-primary italic">incertidumbre</span> <br />
+                comienza con un <span className="text-gradient">trato digno.</span>
               </h2>
               
               <p className="text-xl text-slate/70 font-inter leading-relaxed mb-10">
-                En Ecomédica, el diagnóstico no termina en una imagen digital de alta definición. Comienza en el momento en que usted entra y recibe un trato digno, empático y profesional. 
+                Sabemos que detrás de cada solicitud de ecografía hay una madre preocupada, un deportista lesionado o una familia esperando noticias. Por eso, en Ecomédica eliminamos las barreras del sistema tradicional.
                 <br /><br />
-                Entendemos que la <span className="text-slate font-bold">certeza clínica</span> es la base de su tranquilidad, pero la <span className="text-primary font-bold">calidez humana</span> es lo que le permite dar el siguiente paso con confianza.
+                Combinamos <span className="text-slate font-bold">resultados inmediatos</span> con el respeto que su salud merece. Aquí no es un número más; es una persona que busca respuestas, y nosotros se las entregamos firmadas en minutos.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">

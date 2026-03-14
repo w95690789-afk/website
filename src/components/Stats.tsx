@@ -6,7 +6,7 @@ const stats = [
   { label: "Casos Resueltos", value: "48k+" },
   { label: "Certeza Clínica", value: "99.8%" },
   { label: "Entrega Express", value: "30m" },
-  { label: "Tecnología GE", value: "2025" },
+  { label: "Tecnología Pro", value: "2026" },
 ];
 
 export default function Stats() {

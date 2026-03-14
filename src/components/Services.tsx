@@ -5,29 +5,29 @@ import { Activity, ShieldCheck, Beaker, Zap, Clock, Smartphone } from "lucide-re
 
 const services = [
   {
-    title: "Ecografías de Alta Claridad",
-    desc: "Obstétricas, Doppler y especializadas con transductores de última generación. Visualización profunda para diagnósticos irrebatibles.",
+    title: "Ecografías de Alta Resolución",
+    desc: "Diagnósticos precisos hoy mismo. Desde $70.000, accede a ultrasonidos con tecnología de alta gama que garantizan nitidez total para un reporte confiable.",
     icon: <Activity />,
     color: "bg-teal-50 text-teal-600",
     size: "col-span-1 lg:col-span-2",
   },
   {
-    title: "Laboratorio de Ingreso",
-    desc: "Circuitos ágiles para empresas y particulares. Cumpla con sus requisitos legales sin perder el día.",
-    icon: <ShieldCheck />,
-    color: "bg-blue-50 text-blue-600",
-    size: "col-span-1",
-  },
-  {
-    title: "Rayos X Digitales GE",
-    desc: "Nitidez absoluta con mínima exposición. Resultados firmados por especialistas en tiempo récord.",
+    title: "Radiología Digital",
+    desc: "Imágenes nítidas con mínima radiación. Ideal para ingresos laborales o traumatología, con entrega inmediata física y digital.",
     icon: <Zap />,
     color: "bg-amber-50 text-amber-600",
     size: "col-span-1",
   },
   {
-    title: "Resultados en 30 min",
-    desc: "Su tiempo vale. Entregamos informes digitales y físicos antes de que termine su café.",
+    title: "Laboratorio Clínico",
+    desc: "Certificados de salud y exámenes de rutina con rapidez. Resultados digitales seguros para que no pierdas tiempo en trámites.",
+    icon: <Beaker />,
+    color: "bg-blue-50 text-blue-600",
+    size: "col-span-1",
+  },
+  {
+    title: "Certeza en 30 Minutos",
+    desc: "Circuito Express: No esperes días. Recibes tu informe firmado por especialistas antes de salir de nuestras instalaciones.",
     icon: <Clock />,
     color: "bg-indigo-50 text-indigo-600",
     size: "col-span-1 lg:col-span-2",
@@ -42,14 +42,14 @@ export default function Services() {
           <div className="max-w-xl">
             <h2 className="text-5xl md:text-7xl font-black font-outfit text-slate mb-6 leading-tight">
               Especialidades con <br />
-              <span className="text-primary italic">precisión GE.</span>
+              <span className="text-primary italic">precisión clínica digital.</span>
             </h2>
             <p className="text-xl text-slate/60 font-inter max-w-lg">
               Despliegue tecnológico y rigor médico al servicio de su diagnóstico. Sin esperas, sin dudas.
             </p>
           </div>
           <button className="px-8 py-4 bg-slate text-white rounded-xl font-bold font-outfit hover:bg-primary transition-colors shadow-lg shadow-slate/10">
-            Consultar Tarifas 2026
+            Ver Precios Particulares
           </button>
         </div>
 

@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Ecografías y Rayos X Bogotá | Resultados Express en Teusaquillo | Ecomédica",
   description:
-    "Centro de diagnóstico por imagen con tecnología GE HealthCare en Teusaquillo, Bogotá. Ecografías obstétricas, Doppler, rayos X digitales y salud ocupacional. Resultados en 30 minutos. Desde $50.000 COP.",
+    "Centro de diagnóstico por imagen con tecnología de alta gama clínica en Teusaquillo, Bogotá. Ecografías obstétricas, Doppler, rayos X digitales y salud ocupacional. Resultados en 30 minutos. Desde $50.000 COP.",
   keywords: [
     "ecografías bogotá",
     "ecografía obstétrica teusaquillo",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Ecomédica IPS",
     title: "Ecografías y Rayos X Bogotá | Resultados en 30 min | Ecomédica",
     description:
-      "Diagnóstico por imagen con tecnología GE HealthCare en Teusaquillo. Resultados express. Desde $50.000 COP.",
+      "Diagnóstico por imagen con tecnología diagnóstica premium en Teusaquillo. Resultados express. Desde $50.000 COP.",
     images: [
       {
         url: "https://ecomedica.co/og-image.png",

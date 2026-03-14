@@ -16,7 +16,7 @@ const comparison = [
   },
   {
     feature: "Precisión en Imagen",
-    ecomedica: "Tecnología GE HealthCare (Nitidez 4K)",
+    ecomedica: "Tecnología de Alta Precisión (Nitidez 4K)",
     others: "Equipos obsoletos con imágenes borrosas",
   },
   {

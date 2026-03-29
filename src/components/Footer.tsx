@@ -34,6 +34,7 @@ export default function Footer() {
             <div className="mt-8 p-4 bg-primary/5 rounded-2xl border border-primary/10">
               <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1 font-inter">Inversión en Salud</p>
               <p className="text-2xl font-black text-slate font-outfit">Desde $90.000 <span className="text-sm font-normal text-slate/40">COP</span></p>
+              {/* Force refresh: 1711751850 */}
             </div>
           </div>
           <div>

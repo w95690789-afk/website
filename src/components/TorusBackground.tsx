@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { MeshDistortMaterial, Float } from "@react-three/drei";
 import * as THREE from "three";
@@ -34,18 +34,37 @@ function Torus() {
 }
 
 export default function TorusBackground() {
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <div className="absolute inset-0 -z-10 bg-clinical-white pointer-events-none select-none overflow-hidden" aria-hidden="true">
-      <Canvas 
-        camera={{ position: [0, 0, 20], fov: 75 }} 
-        gl={{ antialias: false, powerPreference: "high-performance" }}
-        dpr={1}
-      >
-        <ambientLight intensity={1} />
-        <pointLight position={[10, 10, 10]} intensity={1.5} color="#0F766E" />
-        <pointLight position={[-10, -10, -10]} intensity={1} color="#2DD4BF" />
-        <Torus />
-      </Canvas>
+      {/* Dynamic Grid Fallback for Mobile (Zero TBT) */}
+      <div className="absolute inset-0 opacity-[0.4]" 
+           style={{ 
+             backgroundImage: "radial-gradient(#2DD4BF 0.5px, transparent 0.5px)", 
+             backgroundSize: "30px 30px" 
+           }} 
+      />
+      
+      {!isMobile && (
+        <Canvas 
+          camera={{ position: [0, 0, 20], fov: 75 }} 
+          gl={{ antialias: false, powerPreference: "high-performance", alpha: true }}
+          dpr={1}
+        >
+          <ambientLight intensity={1} />
+          <pointLight position={[10, 10, 10]} intensity={1.5} color="#0F766E" />
+          <pointLight position={[-10, -10, -10]} intensity={1} color="#2DD4BF" />
+          <Torus />
+        </Canvas>
+      )}
     </div>
   );
 }

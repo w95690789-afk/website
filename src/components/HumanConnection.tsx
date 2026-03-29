@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function HumanConnection() {
@@ -21,10 +22,13 @@ export default function HumanConnection() {
           >
             <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-2xl group-hover:bg-primary/20 transition-all duration-700" />
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5 bg-slate/5">
-              <img 
+              <Image 
                 src="/manos-ecomedica.jpeg" 
                 alt="Conexión humana y ternura en Ecomedica IPS" 
+                width={800}
+                height={600}
                 className="w-full h-auto object-cover transform scale-110 md:scale-120 group-hover:scale-125 transition-transform duration-[5000ms]"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate/40 to-transparent opacity-60" />
             </div>

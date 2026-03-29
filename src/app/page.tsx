@@ -9,7 +9,8 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SchemaMarkup from "@/components/SchemaMarkup";
-import TorusBackground from "@/components/TorusBackground";
+import dynamic from "next/dynamic";
+const TorusBackground = dynamic(() => import("@/components/TorusBackground"), { ssr: false });
 
 export default function Home() {
   return (

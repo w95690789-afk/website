@@ -1,15 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-32 md:pt-44">
       {/* Background with Image and Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <Image 
           src="/hero-room.png" 
           alt="Clínica Moderna" 
-          className="w-full h-full object-cover"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40 md:to-transparent" />
       </div>

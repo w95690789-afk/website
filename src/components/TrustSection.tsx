@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function TrustSection() {
@@ -14,10 +15,13 @@ export default function TrustSection() {
             className="flex-1 relative"
           >
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
-              <img 
+              <Image 
                 src="/patient-care.png" 
                 alt="Cuidado al Paciente Ecomedica" 
-                className="w-full h-auto"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             {/* Background decorative elements */}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,10 +23,13 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between min-h-[4rem]">
         <div className="flex items-center gap-3">
-          <img 
+          <Image 
             src="/logo.png" 
             alt="Ecomedica Logo" 
+            width={120} 
+            height={80} 
             className="h-16 md:h-20 w-auto object-contain"
+            priority
           />
         </div>
 

@@ -16,12 +16,13 @@ export default function TrustSection() {
           >
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
               <Image 
-                src="/patient-care.png" 
-                alt="Cuidado al Paciente Ecomedica" 
+                src="/manos-new.jpg" 
+                alt="Conexión Humana Ecomedica" 
                 width={800}
                 height={600}
                 className="w-full h-auto object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
             </div>
             {/* Background decorative elements */}

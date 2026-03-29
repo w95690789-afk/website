@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Footer() {
   const WHATSAPP_NUMBER = "573245134768";
@@ -11,7 +12,13 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
           <div className="space-y-6">
-            <img src="/logo.png" alt="Ecomedica" className="h-12 w-auto" />
+            <Image 
+              src="/logo.png" 
+              alt="Ecomedica" 
+              width={160} 
+              height={48} 
+              className="h-12 w-auto" 
+            />
             <p className="text-slate/60 font-inter leading-relaxed max-w-xs">
               Sede certificada por la Secretaría de Salud de Bogotá. Expertos en diagnóstico por imagen y salud ocupacional con tecnología de última generación.
             </p>

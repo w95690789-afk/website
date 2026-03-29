@@ -12,10 +12,11 @@ export default function Hero() {
           alt="Clínica Moderna" 
           fill
           priority
+          unoptimized
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/10" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -63,8 +64,14 @@ export default function Hero() {
             <div className="mt-16 flex items-center gap-8 border-t border-slate/10 pt-8 max-md:flex-col max-md:items-start">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate/10">
-                    <img src={`https://i.pravatar.cc/150?u=${i + 10}`} alt="Paciente" />
+                  <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate/10 relative">
+                    <Image 
+                      src={`https://i.pravatar.cc/150?u=${i + 10}`} 
+                      alt="Paciente" 
+                      width={48}
+                      height={48}
+                      className="object-cover"
+                    />
                   </div>
                 ))}
               </div>
@@ -81,20 +88,20 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Floating Call-out */}
+      {/* Floating Call-out - Adjusted to avoid covering the image */}
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 right-10 hidden lg:block max-w-xs"
+        className="absolute bottom-4 right-10 hidden lg:block max-w-[200px]"
       >
-        <div className="glass-card p-6 rounded-3xl border border-white/50 shadow-2xl">
-          <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-inner">
-            <span className="text-2xl">⚡</span>
+        <div className="glass-card p-4 rounded-3xl border border-white/50 shadow-2xl scale-90 origin-bottom-right">
+          <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-inner">
+            <span className="text-xl">⚡</span>
           </div>
-          <h4 className="font-bold text-slate mb-2">Resultados en 15 min</h4>
-          <p className="text-sm text-slate/60 leading-relaxed">
-            Circuito Express: reciba sus resultados digitales y físicos antes de salir de la clínica en 15 minutos.
+          <h4 className="font-bold text-slate text-sm mb-1 leading-tight">Resultados en 15 min</h4>
+          <p className="text-[10px] text-slate/50 leading-relaxed">
+            Circuito Express: reciba sus resultados antes de salir.
           </p>
         </div>
       </motion.div>

@@ -20,8 +20,8 @@ const comparison = [
     others: "Equipos obsoletos con imágenes borrosas",
   },
   {
-    feature: "Costo Beneficio",
-    ecomedica: "Tarifa preferencial desde $90.000 COP",
+    feature: "Costo beneficio",
+    ecomedica: "Tarifa preferencial desde $90.000 para ecografías de alta resolución.",
     others: "Costos ocultos o copagos excesivos",
   },
   {
@@ -61,8 +61,7 @@ export default function Differentiator() {
             ¿Por qué elegirnos?
           </span>
           <h2 className="text-5xl md:text-7xl font-black font-outfit leading-tight mb-6">
-            Ecomedica vs. <br />
-            <span className="text-secondary italic">el sistema tradicional.</span>
+            ¿Por qué <span className="text-secondary italic">elegirnos?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto font-inter">
             Nos caracterizamos por brindar resultados de laboratorios, ecografías y rayos X de manera ágil, asegurando oportunidad y calidad en la atención.

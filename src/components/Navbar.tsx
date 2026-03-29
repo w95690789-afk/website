@@ -17,10 +17,10 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "py-4 bg-white/80 backdrop-blur-lg border-b border-slate/10" : "py-6"
+        scrolled ? "py-3 bg-white/90 backdrop-blur-lg border-b border-slate/10 shadow-sm" : "py-5"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-6 flex items-center justify-between min-h-[4rem]">
         <div className="flex items-center gap-3">
           <img 
             src="/logo.png" 

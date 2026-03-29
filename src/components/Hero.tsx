@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-32 md:pt-44">
       {/* Background with Image and Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -21,7 +21,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-10 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-xs font-bold tracking-widest text-primary uppercase">
                 Tecnología Digital de Vanguardia

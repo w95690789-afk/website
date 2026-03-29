@@ -34,7 +34,7 @@ export default function Hero() {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-outfit mb-8 text-slate leading-[1.05] tracking-tight">
               ¿Sin orden médica? <br />
-              <span className="text-primary italic">Atención hoy</span> desde <span className="text-gradient">$90.000.</span>
+              <span className="text-primary italic">Atención hoy</span> desde <span className="text-gradient">$90.000.  </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate/80 mb-12 max-w-2xl font-inter leading-relaxed">

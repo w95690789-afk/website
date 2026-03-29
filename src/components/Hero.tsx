@@ -12,7 +12,7 @@ export default function Hero() {
           alt="Clínica Moderna" 
           fill
           priority
-          unoptimized
+          quality={90}
           className="object-cover"
           sizes="100vw"
         />

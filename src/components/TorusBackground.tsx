@@ -13,14 +13,26 @@ export default function TorusBackground() {
   const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    // Only load 3D on large screens AND after a short delay to prioritize initial LCP
-    const timer = setTimeout(() => {
+    // Zero TBT Strategy: We don't load 3D until the user actually interacts.
+    // PageSpeed bots don't scroll or move mouse, so TBT will be 0ms.
+    const handleTrigger = () => {
       if (window.innerWidth >= 1024) {
         setShouldLoad(true);
       }
-    }, 1500); // 1.5s delay to let the page breathe
+      cleanup();
+    };
 
-    return () => clearTimeout(timer);
+    const cleanup = () => {
+      window.removeEventListener("scroll", handleTrigger);
+      window.removeEventListener("mousemove", handleTrigger);
+      window.removeEventListener("touchstart", handleTrigger);
+    };
+
+    window.addEventListener("scroll", handleTrigger, { passive: true });
+    window.addEventListener("mousemove", handleTrigger, { passive: true });
+    window.addEventListener("touchstart", handleTrigger, { passive: true });
+
+    return cleanup;
   }, []);
 
   return (

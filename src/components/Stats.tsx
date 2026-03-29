@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { label: "Casos Resueltos", value: "48k+" },
-  { label: "Certeza Clínica", value: "99.8%" },
-  { label: "Entrega Express", value: "30m" },
+  { label: "Certeza Clínica", value: "Superior" },
+  { label: "Entrega Express", value: "15m" },
   { label: "Tecnología Pro", value: "2026" },
 ];
 

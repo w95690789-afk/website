@@ -22,8 +22,8 @@ export default function HumanConnection() {
             <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-2xl group-hover:bg-primary/20 transition-all duration-700" />
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5">
               <img 
-                src="/human-connection.png" 
-                alt="Conexión Humana Ecomédica" 
+                src="/human-connection-new.png" 
+                alt="Conexión Humana Ecomedica" 
                 className="w-full h-auto object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[3000ms]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate/40 to-transparent opacity-60" />
@@ -57,19 +57,19 @@ export default function HumanConnection() {
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-outfit text-slate leading-tight mb-8">
                 El final de la <span className="text-primary italic">incertidumbre</span> <br />
-                comienza con un <span className="text-gradient">trato digno.</span>
+                comienza con un <span className="text-gradient">trato digno, humano y respetuoso.</span>
               </h2>
               
               <p className="text-xl text-slate/70 font-inter leading-relaxed mb-10">
-                Sabemos que detrás de cada solicitud de ecografía hay una madre preocupada, un deportista lesionado o una familia esperando noticias. Por eso, en Ecomédica eliminamos las barreras del sistema tradicional.
+                Sabemos que detrás de cada solicitud de ecografía hay una madre preocupada, un deportista lesionado o una familia esperando noticias. Por eso, en Ecomedica eliminamos las barreras del sistema tradicional.
                 <br /><br />
-                Combinamos <span className="text-slate font-bold">resultados inmediatos</span> con el respeto que su salud merece. Aquí no es un número más; es una persona que busca respuestas, y nosotros se las entregamos firmadas en minutos.
+                Combinamos <span className="text-slate font-bold">resultados inmediatos</span> con el respeto que su salud merece. Durante la ecografía, puedes estar acompañada por tus familiares o seres queridos, para que compartan contigo este momento especial. Aquí no es un número más; es una persona que busca respuestas, y nosotros se las entregamos en minutos.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
                 {[
-                  { title: "Atención Familiar", desc: "Acompañamiento integral para madres e hijos." },
-                  { title: "Respeto por su Tiempo", desc: "Resultados en 30 minutos sin esperas." }
+                  { title: "Atención Familiar", desc: "Acompañamiento integral para compartir momentos especiales." },
+                  { title: "Respeto por su Tiempo", desc: "Resultados en 15 minutos sin esperas." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">

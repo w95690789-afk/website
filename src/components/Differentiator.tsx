@@ -11,7 +11,7 @@ const comparison = [
   },
   {
     feature: "Tiempo de Entrega",
-    ecomedica: "30 Minutos — Garantizado por reloj",
+    ecomedica: "15 Minutos — Garantizado por reloj (Ecografías)",
     others: "Espera de 3 a 8 días hábiles",
   },
   {
@@ -21,7 +21,7 @@ const comparison = [
   },
   {
     feature: "Costo Beneficio",
-    ecomedica: "Tarifa preferencial de $70.000 COP",
+    ecomedica: "Tarifa preferencial desde $90.000 COP",
     others: "Costos ocultos o copagos excesivos",
   },
   {
@@ -31,7 +31,7 @@ const comparison = [
   },
   {
     feature: "Acceso a Resultados",
-    ecomedica: "Digitales al celular + Físicos firmados",
+    ecomedica: "Acceso a resultados digitales al celular o físicos firmados",
     others: "Solo físico o CD difícil de leer",
   },
 ];
@@ -61,12 +61,11 @@ export default function Differentiator() {
             ¿Por qué elegirnos?
           </span>
           <h2 className="text-5xl md:text-7xl font-black font-outfit leading-tight mb-6">
-            Ecomédica vs. <br />
+            Ecomedica vs. <br />
             <span className="text-secondary italic">el sistema tradicional.</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto font-inter">
-            No es solo tecnología; es un modelo de atención diseñado para
-            eliminar la fricción entre usted y su diagnóstico.
+            Nos caracterizamos por brindar resultados de laboratorios, ecografías y rayos X de manera ágil, asegurando oportunidad y calidad en la atención.
           </p>
         </motion.div>
 
@@ -79,7 +78,7 @@ export default function Differentiator() {
             </div>
             <div className="text-center">
               <span className="inline-block px-4 py-1.5 bg-primary rounded-full text-sm font-bold font-outfit">
-                Ecomédica
+                Ecomedica
               </span>
             </div>
             <div className="text-center">

@@ -6,7 +6,7 @@ import { MessageCircle, X } from "lucide-react";
 
 const WHATSAPP_NUMBER = "573245134768";
 const DEFAULT_MESSAGE = encodeURIComponent(
-  "Hola Ecomédica, quiero agendar una cita para un examen diagnóstico. ¿Cuál es la disponibilidad más próxima?"
+  "Hola Ecomedica, quiero agendar una cita para un examen diagnóstico. ¿Cuál es la disponibilidad más próxima?"
 );
 
 export default function WhatsAppButton() {
@@ -57,12 +57,12 @@ export default function WhatsAppButton() {
                   <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
                     <img
                       src="/logo.png"
-                      alt="Ecomédica"
+                      alt="Ecomedica"
                       className="w-8 h-8 object-contain rounded-full"
                     />
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg font-outfit">Ecomédica</h4>
+                    <h4 className="font-bold text-lg font-outfit">Ecomedica</h4>
                     <p className="text-white/80 text-xs font-inter">
                       Respuesta en menos de 2 min • En línea
                     </p>

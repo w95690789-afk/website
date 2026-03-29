@@ -6,10 +6,17 @@ import { Activity, ShieldCheck, Beaker, Zap, Clock, Smartphone } from "lucide-re
 const services = [
   {
     title: "Ecografías de Alta Resolución",
-    desc: "Diagnósticos precisos hoy mismo. Desde $70.000, accede a ultrasonidos con tecnología de alta gama que garantizan nitidez total para un reporte confiable.",
+    desc: "Diagnósticos precisos hoy mismo. Desde $90.000, accede a ultrasonidos con tecnología de alta gama (2D, 3D, 4D, HD) que garantizan nitidez total para un reporte confiable.",
     icon: <Activity />,
     color: "bg-teal-50 text-teal-600",
-    size: "col-span-1 lg:col-span-2",
+    size: "col-span-1 lg:col-span-1",
+  },
+  {
+    title: "Consulta Médica General",
+    desc: "Servicios integrales que incluyen certificados médicos de estudio, laboral y de huellas dactilares para trámites notariales.",
+    icon: <ShieldCheck />,
+    color: "bg-purple-50 text-purple-600",
+    size: "col-span-1",
   },
   {
     title: "Radiología Digital",
@@ -20,14 +27,14 @@ const services = [
   },
   {
     title: "Laboratorio Clínico",
-    desc: "Certificados de salud y exámenes de rutina con rapidez. Resultados digitales seguros para que no pierdas tiempo en trámites.",
+    desc: "Exámenes de rutina y especializados con rapidez. Entrega de resultados de forma digital y segura para que no pierdas tiempo ni privacidad.",
     icon: <Beaker />,
     color: "bg-blue-50 text-blue-600",
     size: "col-span-1",
   },
   {
-    title: "Certeza en 30 Minutos",
-    desc: "Circuito Express: No esperes días. Recibes tu informe firmado por especialistas antes de salir de nuestras instalaciones.",
+    title: "Certeza en 15 Minutos",
+    desc: "Circuito Express: No espere días. Reciba su informe firmado por especialistas antes de salir de nuestras instalaciones.",
     icon: <Clock />,
     color: "bg-indigo-50 text-indigo-600",
     size: "col-span-1 lg:col-span-2",

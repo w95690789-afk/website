@@ -41,7 +41,7 @@ export default function CTA() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita%20de%20inmediato."
+                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20de%20inmediato."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-12 py-6 bg-white text-primary rounded-[2rem] font-bold text-2xl hover:scale-105 hover:shadow-2xl transition-all shadow-xl flex items-center justify-center"

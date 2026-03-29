@@ -2,10 +2,10 @@ export default function SchemaMarkup() {
   const medicalClinicSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    name: "Ecomédica Centro Médico - Ecografías y Rayos X Teusaquillo",
-    alternateName: "Ecomédica IPS",
+    name: "Ecomedica Centro Medico - Ecografias y Rayos X Teusaquillo",
+    alternateName: "Ecomedica Centro Medico",
     description:
-      "Centro de diagnóstico por imagen con tecnología de vanguardia en Teusaquillo, Bogotá. Ecografías, rayos X digitales y salud ocupacional con resultados en 30 minutos.",
+      "Centro de diagnóstico por imagen con tecnología de vanguardia en Teusaquillo, Bogotá. Ecografías, rayos X digitales y salud ocupacional con resultados en 15 minutos.",
     url: "https://ecomedica.co",
     telephone: "+573245134768",
     email: "info@ecomedica.co",
@@ -85,7 +85,7 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://ecomedica.co/#business",
-    name: "Ecomédica Centro Médico",
+    name: "Ecomedica Centro Medico",
     description:
       "Centro de diagnóstico médico en Teusaquillo, Bogotá. Ecografías de alta claridad, rayos X digitales y laboratorio clínico con tecnología avanzada.",
     url: "https://ecomedica.co",

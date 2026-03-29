@@ -30,16 +30,16 @@ export default function Hero() {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-outfit mb-8 text-slate leading-[1.05] tracking-tight">
               ¿Sin orden médica? <br />
-              <span className="text-primary italic">Atención hoy</span> desde <span className="text-gradient">$70.000.</span>
+              <span className="text-primary italic">Atención hoy</span> desde <span className="text-gradient">$90.000.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate/80 mb-12 max-w-2xl font-inter leading-relaxed">
-              No dejes tu diagnóstico para después. En Ecomédica Teusaquillo, realizamos tu <span className="font-bold text-primary">Ecografía Particular</span> con tecnología de alta gama y entregamos resultados firmados en <span className="text-slate font-semibold italic">solo 30 minutos.</span>
+              Nos ubicamos en Teusaquillo, en el <span className="font-bold text-primary">Centro Médico Ecomédica EU</span>. Realizamos tu ecografía particular con tecnología avanzada de diagnóstico por imágenes 2D, 3D, 4D y HD diseñada para alta resolución en ginecología, obstetricia y cardiología. Entrega de resultados en <span className="text-slate font-semibold italic">15 minutos</span> después de tomar el estudio.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5">
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita%20prioritaria."
+                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20prioritaria."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-10 py-5 bg-primary text-white rounded-2xl font-bold text-xl hover:shadow-[0_20px_40px_rgba(15,118,110,0.3)] transition-all active:scale-95 group flex items-center justify-center"
@@ -88,9 +88,9 @@ export default function Hero() {
           <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-inner">
             <span className="text-2xl">⚡</span>
           </div>
-          <h4 className="font-bold text-slate mb-2">Resultados en 30 min</h4>
+          <h4 className="font-bold text-slate mb-2">Resultados en 15 min</h4>
           <p className="text-sm text-slate/60 leading-relaxed">
-            Circuito Express: reciba sus resultados digitales y físicos antes de salir de la clínica.
+            Circuito Express: reciba sus resultados digitales y físicos antes de salir de la clínica en 15 minutos.
           </p>
         </div>
       </motion.div>

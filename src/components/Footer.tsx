@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
           <div className="space-y-6">
-            <img src="/logo.png" alt="Ecomédica" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Ecomedica" className="h-12 w-auto" />
             <p className="text-slate/60 font-inter leading-relaxed max-w-xs">
               Sede certificada por la Secretaría de Salud de Bogotá. Expertos en diagnóstico por imagen y salud ocupacional con tecnología de última generación.
             </p>
@@ -33,7 +33,7 @@ export default function Footer() {
             </ul>
             <div className="mt-8 p-4 bg-primary/5 rounded-2xl border border-primary/10">
               <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1 font-inter">Inversión en Salud</p>
-              <p className="text-2xl font-black text-slate font-outfit">Desde $70.000 <span className="text-sm font-normal text-slate/40">COP</span></p>
+              <p className="text-2xl font-black text-slate font-outfit">Desde $50.000 <span className="text-sm font-normal text-slate/40">COP</span></p>
             </div>
           </div>
           <div>
@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-slate/40 font-inter text-xs pt-12 border-t border-slate/5 gap-4">
-          <p>© 2026 Ecomédica IPS S.A.S. · NIT 000.000.000-0 · Habilitada por la Secretaría de Salud de Bogotá.</p>
+          <p>© 2026 Ecomedica Centro Medico · NIT 000.000.000-0 · Habilitada por la Secretaría de Salud de Bogotá.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-primary transition-colors">Tratamiento de Datos</a>
             <a href="#" className="hover:text-primary transition-colors">Habeas Data</a>

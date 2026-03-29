@@ -16,7 +16,7 @@ export default function TrustSection() {
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
                 src="/patient-care.png" 
-                alt="Cuidado al Paciente Ecomédica" 
+                alt="Cuidado al Paciente Ecomedica" 
                 className="w-full h-auto"
               />
             </div>
@@ -36,7 +36,7 @@ export default function TrustSection() {
               <span className="text-primary italic">esperar al sistema</span>.
             </h2>
             <p className="text-xl text-slate/70 font-inter leading-relaxed mb-8">
-              No somos solo un centro de imágenes; somos la respuesta rápida que necesitas. En Ecomédica Teusaquillo, eliminamos la incertidumbre con tecnología de <span className="text-primary font-bold">última generación</span> y un equipo de radiólogos expertos que priorizan tu caso.
+              No somos solo un centro de imágenes; somos la respuesta rápida que necesitas. En Ecomedica Teusaquillo, eliminamos la incertidumbre con tecnología de <span className="text-primary font-bold">última generación</span> y un equipo de radiólogos expertos que priorizan tu caso.
             </p>
             
             <div className="space-y-6 mb-12">

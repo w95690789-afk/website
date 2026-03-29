@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Ecografías y Rayos X Bogotá | Resultados Express en Teusaquillo | Ecomédica",
+  title: "Ecografías y Rayos X Bogotá | Resultados Express en Teusaquillo | Ecomedica",
   description:
     "Centro de diagnóstico por imagen con tecnología de alta gama clínica en Teusaquillo, Bogotá. Ecografías obstétricas, Doppler, rayos X digitales y salud ocupacional. Resultados en 30 minutos. Desde $50.000 COP.",
   keywords: [
@@ -32,18 +32,18 @@ export const metadata: Metadata = {
     "ecografía doppler bogotá",
     "radiología teusaquillo",
     "salud ocupacional bogotá",
-    "ecomédica",
+    "ecomedica",
     "centro diagnóstico por imagen bogotá",
     "ecografía particular bogotá",
     "certificado médico de ingreso bogotá",
   ],
-  authors: [{ name: "Ecomédica Centro Médico" }],
+  authors: [{ name: "Ecomedica Centro Médico" }],
   openGraph: {
     type: "website",
     locale: "es_CO",
     url: "https://ecomedica.co",
-    siteName: "Ecomédica IPS",
-    title: "Ecografías y Rayos X Bogotá | Resultados en 30 min | Ecomédica",
+    siteName: "Ecomedica IPS",
+    title: "Ecografías y Rayos X Bogotá | Resultados en 30 min | Ecomedica",
     description:
       "Diagnóstico por imagen con tecnología diagnóstica premium en Teusaquillo. Resultados express. Desde $50.000 COP.",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "https://ecomedica.co/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Ecomédica Centro Médico — Diagnóstico de Alta Precisión",
+        alt: "Ecomedica Centro Médico — Diagnóstico de Alta Precisión",
       },
     ],
   },

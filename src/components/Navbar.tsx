@@ -24,8 +24,8 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <img 
             src="/logo.png" 
-            alt="Ecomédica Logo" 
-            className="h-12 md:h-14 w-auto object-contain"
+            alt="Ecomedica Logo" 
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </div>
 
@@ -34,7 +34,7 @@ export default function Navbar() {
           <a href="#servicios" className="hover:text-primary transition-colors">Servicios</a>
           <a href="#" className="hover:text-primary transition-colors">Especialistas</a>
           <a 
-            href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita."
+            href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-slate text-white rounded-xl font-bold font-outfit text-sm hover:bg-primary transition-all shadow-lg shadow-slate/10 active:scale-95"
@@ -61,7 +61,7 @@ export default function Navbar() {
               <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
               <a href="#" onClick={() => setIsOpen(false)}>Especialistas</a>
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomédica,%20quisiera%20agendar%20una%20cita."
+                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-4 bg-primary text-white rounded-xl font-bold text-center"

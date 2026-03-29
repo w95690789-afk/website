@@ -11,7 +11,7 @@ const comparison = [
   },
   {
     feature: "Tiempo de Entrega",
-    ecomedica: "15 Minutos — Garantizado por reloj (Ecografías)",
+    ecomedica: "Ciencia al servicio de su tiempo, entrega de resultados en 15 minutos.",
     others: "Espera de 3 a 8 días hábiles",
   },
   {

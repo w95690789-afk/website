@@ -33,7 +33,7 @@ export default function Footer() {
             </ul>
             <div className="mt-8 p-4 bg-primary/5 rounded-2xl border border-primary/10">
               <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1 font-inter">Inversión en Salud</p>
-              <p className="text-2xl font-black text-slate font-outfit">Desde $50.000 <span className="text-sm font-normal text-slate/40">COP</span></p>
+              <p className="text-2xl font-black text-slate font-outfit">Desde $90.000 <span className="text-sm font-normal text-slate/40">COP</span></p>
             </div>
           </div>
           <div>
@@ -47,6 +47,7 @@ export default function Footer() {
               <a 
                 href={`tel:+${WHATSAPP_NUMBER}`}
                 className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-lg shadow-primary/5"
+                aria-label="Llamar a Ecomedica"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
               </a>
@@ -61,6 +62,7 @@ export default function Footer() {
         {/* Google Maps Embed Section */}
         <div className="w-full h-80 rounded-[2rem] overflow-hidden border border-slate/5 mb-20 shadow-inner bg-slate/5 grayscale hover:grayscale-0 transition-all duration-700">
           <iframe 
+            title="Ubícanos en Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7154947963383!2d-74.07252272412871!3d4.627192342131908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a263fc915f3%3A0xe51a704e6c434771!2sCl.%2034%20%2314-33%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1707920000000!5m2!1ses-419!2sco" 
             width="100%" 
             height="100%" 

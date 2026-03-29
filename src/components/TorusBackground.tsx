@@ -1,37 +1,12 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { MeshDistortMaterial, Float } from "@react-three/drei";
-import * as THREE from "three";
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
-function Torus() {
-  const mesh = useRef<THREE.Mesh>(null);
-  
-  useFrame((state) => {
-    if (mesh.current) {
-      mesh.current.rotation.x = state.clock.getElapsedTime() * 0.2;
-      mesh.current.rotation.y = state.clock.getElapsedTime() * 0.3;
-    }
-  });
-
-  return (
-    <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-      <mesh ref={mesh}>
-        <torusGeometry args={[8, 2.5, 32, 100]} />
-        <MeshDistortMaterial
-          color="#2DD4BF"
-          attach="material"
-          distort={0.4}
-          speed={2}
-          roughness={0}
-          transparent
-          opacity={0.6}
-        />
-      </mesh>
-    </Float>
-  );
-}
+const TorusCanvas = dynamic(() => import("./TorusCanvas"), { 
+  ssr: false,
+  loading: () => null 
+});
 
 export default function TorusBackground() {
   const [isMobile, setIsMobile] = useState(true);
@@ -54,16 +29,7 @@ export default function TorusBackground() {
       />
       
       {!isMobile && (
-        <Canvas 
-          camera={{ position: [0, 0, 20], fov: 75 }} 
-          gl={{ antialias: false, powerPreference: "high-performance", alpha: true }}
-          dpr={1}
-        >
-          <ambientLight intensity={1} />
-          <pointLight position={[10, 10, 10]} intensity={1.5} color="#0F766E" />
-          <pointLight position={[-10, -10, -10]} intensity={1} color="#2DD4BF" />
-          <Torus />
-        </Canvas>
+        <TorusCanvas />
       )}
     </div>
   );

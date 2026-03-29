@@ -29,15 +29,15 @@ export default function HumanConnection() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate/40 to-transparent opacity-60" />
             </div>
             
-            {/* Floating Emotional Label */}
+            {/* Floating Emotional Label - Refined to cover less image */}
             <motion.div 
-              initial={{ y: 50, opacity: 0 }}
+              initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="absolute -bottom-1 left-0 right-0 glass-card p-10 md:p-14 rounded-t-[4rem] border-t border-white/50 shadow-2xl z-20 flex flex-col items-center text-center"
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="absolute bottom-4 left-6 right-6 md:left-10 md:right-10 glass-card py-6 px-8 rounded-[2rem] border border-white/40 shadow-xl z-20 flex flex-col items-center text-center backdrop-blur-md"
             >
-              <p className="text-primary font-bold text-sm uppercase tracking-[0.3em] mb-4 font-inter">Nuestro Compromiso</p>
-              <p className="text-slate text-2xl md:text-3xl font-bold font-outfit italic leading-tight max-w-md">
+              <p className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-2 font-inter">Nuestro Compromiso</p>
+              <p className="text-slate text-base md:text-xl font-bold font-outfit italic leading-tight">
                 "Cuidamos su futuro como si fuera el nuestro"
               </p>
             </motion.div>

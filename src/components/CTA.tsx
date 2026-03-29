@@ -7,23 +7,9 @@ export default function CTA() {
     <section className="py-24 pb-32">
       <div className="container mx-auto px-6">
         <div className="relative overflow-hidden rounded-[4rem] bg-primary p-12 md:p-24 flex flex-col items-center text-center">
-          {/* Animated Background Blobs */}
-          <motion.div 
-            animate={{ 
-              scale: [1, 1.2, 1],
-              rotate: [0, 90, 0],
-            }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="absolute top-0 right-0 -mr-20 -mt-20 w-[30rem] h-[30rem] bg-secondary/30 rounded-full blur-[100px]" 
-          />
-          <motion.div 
-            animate={{ 
-              scale: [1, 1.3, 1],
-              rotate: [0, -90, 0],
-            }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[40rem] h-[40rem] bg-white/10 rounded-full blur-[120px]" 
-          />
+          {/* Static Background Blobs (Lower CPU/GPU overhead) */}
+          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[30rem] h-[30rem] bg-secondary/20 rounded-full blur-[100px]" aria-hidden="true" />
+          <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[40rem] h-[40rem] bg-white/10 rounded-full blur-[120px]" aria-hidden="true" />
           
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

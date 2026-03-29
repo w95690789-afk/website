@@ -20,11 +20,11 @@ export default function HumanConnection() {
             className="w-full lg:w-1/2 relative group"
           >
             <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-2xl group-hover:bg-primary/20 transition-all duration-700" />
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5 bg-slate/5">
               <img 
-                src="/human-connection-new.png" 
-                alt="Conexión Humana Ecomedica" 
-                className="w-full h-auto object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[3000ms]"
+                src="/manos-ecomedica.jpeg" 
+                alt="Conexión humana y ternura en Ecomedica IPS" 
+                className="w-full h-auto object-cover transform scale-110 md:scale-120 group-hover:scale-125 transition-transform duration-[5000ms]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate/40 to-transparent opacity-60" />
             </div>

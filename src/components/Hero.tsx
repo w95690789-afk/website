@@ -22,9 +22,9 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: typeof window !== 'undefined' && window.innerWidth < 768 ? 0 : -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-10 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -64,14 +64,8 @@ export default function Hero() {
             <div className="mt-16 flex items-center gap-8 border-t border-slate/10 pt-8 max-md:flex-col max-md:items-start">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate/10 relative">
-                    <Image 
-                      src={`https://i.pravatar.cc/150?u=${i + 10}`} 
-                      alt="Paciente" 
-                      width={48}
-                      height={48}
-                      className="object-cover"
-                    />
+                  <div key={i} className="w-12 h-12 rounded-full border-4 border-white flex items-center justify-center bg-primary text-[10px] text-white font-bold">
+                    P{i}
                   </div>
                 ))}
               </div>

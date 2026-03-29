@@ -41,9 +41,9 @@ export default function TrustSection() {
             
             <div className="space-y-6 mb-12">
               {[
-                { title: "Precisión Superior", desc: "99.8% de exactitud validada por médicos radiólogos y equipos de alta resolución.", color: "bg-teal-500" },
+                { title: "Precisión Superior", desc: "Exactitud validada por médicos radiólogos y equipos de alta resolución.", color: "bg-teal-500" },
                 { title: "Seguridad Digital", desc: "Infraestructura digital encriptada. Sus resultados están protegidos, no en sistemas obsoletos.", color: "bg-blue-600" },
-                { title: "Circuito Express", desc: "Ciencia al servicio de su tiempo: resultados firmados y entregados en 30 minutos.", color: "bg-secondary" }
+                { title: "Circuito Express", desc: "Ciencia al servicio de su tiempo, entrega de resultados en 15 minutos.", color: "bg-secondary" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-5 p-5 bg-white rounded-2xl border border-slate/5 shadow-sm hover:shadow-md transition-all">
                   <div className={`flex-shrink-0 w-3 h-3 rounded-full ${item.color} animate-pulse`} />

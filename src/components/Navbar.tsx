@@ -17,8 +17,8 @@ export default function Navbar() {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "py-3 bg-white/90 backdrop-blur-lg border-b border-slate/10 shadow-sm" : "py-5"
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
+        scrolled ? "py-3 bg-white/95 backdrop-blur-xl border-b border-slate/10 shadow-lg" : "py-5"
       }`}
     >
       <div className="w-full max-w-[1400px] mx-auto px-6 flex items-center justify-between min-h-[4rem]">
@@ -62,7 +62,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-slate/10 overflow-hidden"
+            className="md:hidden bg-white border-b border-slate/10 overflow-y-auto max-h-[80vh]"
           >
             <div className="container mx-auto px-6 py-8 flex flex-col gap-6 font-inter font-medium text-slate">
               <a href="#" onClick={() => setIsOpen(false)}>Inicio</a>

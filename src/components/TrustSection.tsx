@@ -40,13 +40,21 @@ export default function TrustSection() {
               </div>
             </div>
             
-            {/* Context Label */}
-            <div className="absolute -bottom-6 -right-6 lg:-right-10 bg-white p-6 rounded-3xl shadow-xl border border-slate/10 hidden md:block max-w-[240px]">
-              <p className="text-slate/40 text-[10px] font-black uppercase tracking-widest mb-2 font-inter">Certeza Total</p>
-              <p className="text-slate font-bold font-outfit text-sm italic">
+            {/* Context Label - Refined & Brought to Front */}
+            <motion.div 
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+              className="absolute -bottom-8 -right-4 lg:-right-12 glass-card p-6 md:p-8 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 z-30 max-w-[280px] backdrop-blur-xl"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+                <p className="text-slate/60 text-[10px] font-black uppercase tracking-[0.2em] font-inter">Certeza Total</p>
+              </div>
+              <p className="text-slate font-bold font-outfit text-base md:text-lg italic leading-tight">
                 "Imágenes nítidas, decisiones médicas seguras."
               </p>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Text Content: Urgency & Precision */}

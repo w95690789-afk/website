@@ -70,8 +70,8 @@ export default function Differentiator() {
 
         {/* Comparison Table */}
         <div className="max-w-4xl mx-auto">
-          {/* Table Header */}
-          <div className="grid grid-cols-3 gap-4 mb-4 px-6">
+          {/* Table Header - Hidden on mobile */}
+          <div className="hidden md:grid grid-cols-3 gap-4 mb-4 px-6">
             <div className="text-sm font-bold text-white/30 uppercase tracking-widest font-inter">
               Criterio
             </div>
@@ -88,33 +88,50 @@ export default function Differentiator() {
           </div>
 
           {/* Table Rows */}
-          {comparison.map((row, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: i * 0.08 }}
-              viewport={{ once: true }}
-              className="grid grid-cols-3 gap-4 items-center p-6 rounded-2xl hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
-            >
-              <div className="font-bold text-white/80 font-outfit">
-                {row.feature}
-              </div>
-              <div className="flex items-center justify-center gap-2 text-center">
-                <Check className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span
-                  className="text-sm text-white/90 font-inter"
-                  dangerouslySetInnerHTML={{ __html: row.ecomedica }}
-                />
-              </div>
-              <div className="flex items-center justify-center gap-2 text-center">
-                <X className="w-5 h-5 text-red-400/60 flex-shrink-0" />
-                <span className="text-sm text-white/40 font-inter">
-                  {row.others}
-                </span>
-              </div>
-            </motion.div>
-          ))}
+          <div className="space-y-4 md:space-y-0">
+            {comparison.map((row, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.08 }}
+                viewport={{ once: true }}
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 items-center p-8 md:p-6 rounded-3xl md:rounded-2xl bg-white/5 md:bg-transparent md:hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
+              >
+                {/* Feature Label */}
+                <div className="font-bold text-xl md:text-base text-white/90 font-outfit md:text-white/80">
+                  {row.feature}
+                </div>
+
+                {/* Ecomedica Column */}
+                <div className="flex items-center gap-4 md:justify-center md:gap-2">
+                  <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center md:bg-transparent">
+                    <Check className="w-5 h-5 text-secondary flex-shrink-0" />
+                  </div>
+                  <div className="flex flex-col md:items-center">
+                    <span className="text-[10px] uppercase font-bold text-secondary md:hidden mb-1">Ecomedica</span>
+                    <span
+                      className="text-sm text-white md:text-white/90 font-inter"
+                      dangerouslySetInnerHTML={{ __html: row.ecomedica }}
+                    />
+                  </div>
+                </div>
+
+                {/* Competitors Column */}
+                <div className="flex items-center gap-4 md:justify-center md:gap-2 opacity-60 md:opacity-100">
+                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center md:bg-transparent">
+                    <X className="w-5 h-5 text-red-400/60 flex-shrink-0" />
+                  </div>
+                  <div className="flex flex-col md:items-center">
+                    <span className="text-[10px] uppercase font-bold text-white/30 md:hidden mb-1">Otros Sistemas</span>
+                    <span className="text-sm text-white/60 md:text-white/40 font-inter">
+                      {row.others}
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom CTA */}

@@ -10,41 +10,41 @@ export default function HumanConnection() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-slate/2 opacity-30 skew-x-12 translate-x-1/2" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-stretch gap-16 lg:gap-24">
           
-          {/* Image Container */}
+          {/* Image Container - Stretched to match text height */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="w-full lg:w-1/2 relative group"
+            className="w-full lg:w-1/2 relative group min-h-[400px] lg:min-h-full"
           >
-            <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-2xl group-hover:bg-primary/20 transition-all duration-700" />
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5 bg-slate/5">
+            <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] blur-3xl group-hover:bg-primary/10 transition-all duration-700" />
+            <div className="relative h-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5 bg-slate/5">
               <Image 
                 src="/manos-ecomedica.jpeg" 
-                alt="Conexión humana y ternura en Ecomedica IPS" 
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover transform scale-110 md:scale-120 group-hover:scale-125 transition-transform duration-[5000ms]"
+                alt="Conexión humana en Ecomedica IPS" 
+                fill
+                className="object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[5000ms]"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate/40 to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate/60 via-transparent to-transparent opacity-60" />
+              
+              {/* Floating Emotional Label - Refined positioning */}
+              <motion.div 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.8, duration: 0.8 }}
+                className="absolute bottom-8 left-8 right-8 glass-card py-6 px-8 rounded-3xl border border-white/40 shadow-xl z-20 flex flex-col items-center text-center backdrop-blur-md"
+              >
+                <p className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-2 font-inter">Nuestro Compromiso</p>
+                <p className="text-slate text-base md:text-xl font-bold font-outfit italic leading-tight">
+                  "Cuidamos su futuro como si fuera el nuestro"
+                </p>
+              </motion.div>
             </div>
-            
-            {/* Floating Emotional Label - Refined to cover less image */}
-            <motion.div 
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="absolute bottom-4 left-6 right-6 md:left-10 md:right-10 glass-card py-6 px-8 rounded-[2rem] border border-white/40 shadow-xl z-20 flex flex-col items-center text-center backdrop-blur-md"
-            >
-              <p className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-2 font-inter">Nuestro Compromiso</p>
-              <p className="text-slate text-base md:text-xl font-bold font-outfit italic leading-tight">
-                "Cuidamos su futuro como si fuera el nuestro"
-              </p>
-            </motion.div>
           </motion.div>
 
           {/* Text Content */}

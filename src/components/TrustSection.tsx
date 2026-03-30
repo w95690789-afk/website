@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 export default function TrustSection() {
   return (
     <section className="py-32 relative overflow-hidden bg-white">
-      {/* Background refinement: Subtle geometric accent */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/2 opacity-20 -skew-x-12 translate-x-1/3 pointer-events-none" />
+      {/* Background refinement: Subtle geometric accent - hidden on mobile to avoid overflow */}
+      <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full bg-primary/2 opacity-20 -skew-x-12 translate-x-1/3 pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">

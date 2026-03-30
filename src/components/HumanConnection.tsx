@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 export default function HumanConnection() {
   return (
     <section className="py-24 relative overflow-hidden bg-white">
-      {/* Subtle background decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-slate/2 opacity-30 skew-x-12 translate-x-1/2" />
+      {/* Subtle background decoration - hidden on mobile to avoid overflow */}
+      <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full bg-slate/2 opacity-30 skew-x-12 translate-x-1/2" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch gap-16 lg:gap-24">

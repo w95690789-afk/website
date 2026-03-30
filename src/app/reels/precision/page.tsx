@@ -71,30 +71,33 @@ export default function ReelPage() {
           <span className="text-white font-bold tracking-widest text-[10px] uppercase font-outfit">Ecomedica IPS</span>
         </div>
 
-        {/* Dynamic Text Layer */}
-        <div className="absolute inset-x-0 bottom-32 px-10 z-40">
+        {/* Dynamic Text Layer - Adjusted for Instagram/TikTok Safe Zones */}
+        <div className="absolute inset-x-0 bottom-48 px-8 z-40">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentScene + "text"}
-              initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -20, filter: "blur(5px)" }}
-              transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+              initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+              animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+              exit={{ opacity: 0, scale: 1.1, filter: "blur(5px)" }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
+              className="text-center"
             >
-              <h2 className="text-white text-5xl font-black font-outfit mb-4 leading-tight tracking-tighter drop-shadow-2xl">
+              <h2 className="text-white text-6xl md:text-7xl font-black font-outfit mb-3 leading-[0.9] tracking-tighter drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] uppercase">
                 {scenes[currentScene].hook}
               </h2>
-              <p className="text-primary-light text-xl font-medium font-inter drop-shadow-lg">
-                {scenes[currentScene].sub}
-              </p>
+              <div className="inline-block px-4 py-1 bg-primary/90 backdrop-blur-md rounded-lg shadow-xl">
+                <p className="text-white text-lg font-bold font-inter uppercase tracking-widest">
+                  {scenes[currentScene].sub}
+                </p>
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Progress Bar */}
-        <div className="absolute top-4 inset-x-4 flex gap-1 z-50">
+        {/* Progress Bar - Thicker for mobile visibility */}
+        <div className="absolute top-6 inset-x-6 flex gap-2 z-50">
           {scenes.map((_, i) => (
-            <div key={i} className="flex-1 h-1 bg-white/20 rounded-full overflow-hidden">
+            <div key={i} className="flex-1 h-1.5 bg-white/20 rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: "0%" }}
                 animate={{ width: i === currentScene ? "100%" : i < currentScene ? "100%" : "0%" }}
@@ -102,23 +105,23 @@ export default function ReelPage() {
                   duration: i === currentScene ? scenes[currentScene].duration : 0, 
                   ease: "linear" 
                 }}
-                className="h-full bg-primary"
+                className="h-full bg-primary shadow-[0_0_15px_rgba(15,118,110,0.8)]"
               />
             </div>
           ))}
         </div>
 
-        {/* CTA Button Overlay */}
+        {/* CTA Button Overlay - High Visibility */}
         {currentScene === 2 && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="absolute bottom-12 inset-x-8 z-50 text-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="absolute bottom-16 inset-x-8 z-50 text-center"
           >
             <a 
               href="https://wa.me/573245134768"
               target="_blank"
-              className="inline-block px-10 py-5 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl animate-pulse"
+              className="w-full py-6 bg-white text-primary rounded-2xl font-black text-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-primary/20 hover:scale-105 transition-transform"
             >
               AGENDAR HOY 📲
             </a>

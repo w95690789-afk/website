@@ -8,7 +8,7 @@ export default function Footer() {
   
   return (
     <footer className="py-20 border-t border-slate/5 bg-white/80 backdrop-blur-md relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
           <div className="space-y-6">

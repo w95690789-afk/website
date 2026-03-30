@@ -48,7 +48,7 @@ export default function WhatsAppButton() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed bottom-28 right-6 z-[60] w-80 max-w-[calc(100vw-3rem)]"
+            className="fixed bottom-28 right-6 z-[60] w-80 max-w-[calc(100%-3rem)]"
           >
             <div className="bg-white rounded-3xl shadow-2xl shadow-slate/20 border border-slate/10 overflow-hidden">
               {/* Header */}

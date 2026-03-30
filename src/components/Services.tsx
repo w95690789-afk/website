@@ -46,8 +46,8 @@ export default function Services() {
   return (
     <section className="py-32 relative overflow-hidden" id="servicios">
       
-      {/* Symbolic Background: Digital Mastery */}
-      <div className="absolute top-0 right-0 w-full h-1/2 opacity-[0.08] pointer-events-none select-none">
+      {/* Symbolic Background: Digital Mastery - Enhanced Visibility v2.6 */}
+      <div className="absolute top-0 right-0 w-full h-[600px] opacity-[0.25] pointer-events-none select-none">
         <NextImage 
           src="/bg-digital-precision.png" 
           alt="Precisión Clínica Digital Background" 
@@ -55,7 +55,7 @@ export default function Services() {
           className="object-cover object-right-top"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">

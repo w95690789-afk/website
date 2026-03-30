@@ -12,13 +12,12 @@ export default function HumanConnection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch gap-16 lg:gap-24">
           
-          {/* Image Container - Stretched to match text height */}
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="w-full lg:w-1/2 relative group min-h-[400px] lg:min-h-full"
+            className="w-full lg:w-1/2 relative group h-[450px] lg:h-auto lg:min-h-full"
           >
             <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] blur-3xl group-hover:bg-primary/10 transition-all duration-700" />
             <div className="relative h-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate/5 bg-slate/5">

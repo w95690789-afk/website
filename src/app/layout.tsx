@@ -84,7 +84,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </head>
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased selection:bg-teal-100 selection:text-teal-900`}
+        className={`${inter.variable} ${outfit.variable} antialiased selection:bg-teal-100 selection:text-teal-900 overflow-x-hidden w-full`}
       >
         {children}
       </body>

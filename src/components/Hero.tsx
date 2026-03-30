@@ -22,8 +22,8 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
           <motion.div
-            initial={{ opacity: 0, x: typeof window !== 'undefined' && window.innerWidth < 768 ? 0 : -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-10 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
@@ -62,10 +62,12 @@ export default function Hero() {
 
             {/* Trust Indicators */}
             <div className="mt-16 flex items-center gap-8 border-t border-slate/10 pt-8 max-md:flex-col max-md:items-start">
-              <div className="flex -space-x-3">
+              <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-12 h-12 rounded-full border-4 border-white flex items-center justify-center bg-primary text-[10px] text-white font-bold">
-                    P{i}
+                  <div key={i} className="w-14 h-14 rounded-full border-4 border-white flex items-center justify-center bg-clinical-white shadow-lg overflow-hidden">
+                    <svg className="w-full h-full text-primary/20 scale-150 transform translate-y-2" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
                   </div>
                 ))}
               </div>

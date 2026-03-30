@@ -1,5 +1,6 @@
 "use client";
 
+import NextImage from "next/image";
 import { motion } from "framer-motion";
 import { Activity, ShieldCheck, Beaker, Zap, Clock, Smartphone } from "lucide-react";
 
@@ -43,20 +44,37 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-32" id="servicios">
-      <div className="container mx-auto px-6">
+    <section className="py-32 relative overflow-hidden" id="servicios">
+      
+      {/* Symbolic Background: Digital Mastery */}
+      <div className="absolute top-0 right-0 w-full h-1/2 opacity-[0.08] pointer-events-none select-none">
+        <NextImage 
+          src="/bg-digital-precision.png" 
+          alt="Precisión Clínica Digital Background" 
+          fill
+          className="object-cover object-right-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
           <div className="max-w-xl">
-            <h2 className="text-5xl md:text-7xl font-black font-outfit text-slate mb-6 leading-tight">
+            <div className="inline-flex items-center gap-3 px-4 py-2 mb-6 bg-primary/5 rounded-full border border-primary/10">
+              <span className="w-2 h-2 rounded-full bg-primary" />
+              <span className="text-[10px] font-black tracking-[0.2em] text-primary uppercase font-inter">Infraestructura 2026</span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black font-outfit text-slate mb-6 leading-[0.9] tracking-tight">
               Especialidades con <br />
               <span className="text-primary italic">precisión clínica digital.</span>
             </h2>
-            <p className="text-xl text-slate/60 font-inter max-w-lg">
+            <p className="text-xl text-slate/60 font-inter max-w-lg leading-relaxed">
               Despliegue tecnológico y rigor médico al servicio de su diagnóstico. Sin esperas, sin dudas.
             </p>
           </div>
-          <button className="px-8 py-4 bg-slate text-white rounded-xl font-bold font-outfit hover:bg-primary transition-colors shadow-lg shadow-slate/10">
-            Ver Precios Particulares
+          <button className="px-10 py-5 bg-slate text-white rounded-2xl font-bold font-outfit text-lg hover:bg-primary transition-all shadow-xl shadow-slate/10 active:scale-95">
+            Ver Precios Particulares →
           </button>
         </div>
 

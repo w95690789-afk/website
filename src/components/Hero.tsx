@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-32 md:pt-44">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-44">
       {/* Background with Image and Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image 
@@ -44,7 +44,7 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-5">
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20prioritaria."
+                href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20prioritaria."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-10 py-5 bg-primary text-white rounded-2xl font-bold text-xl hover:shadow-[0_20px_40px_rgba(15,118,110,0.3)] transition-all active:scale-95 group flex items-center justify-center"
@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-16 flex items-center gap-8 border-t border-slate/10 pt-8 max-md:flex-col max-md:items-start">
+            <div className="mt-12 flex items-center gap-8 border-t border-slate/10 pt-8 max-md:flex-col max-md:items-start">
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-14 h-14 rounded-full border-4 border-white flex items-center justify-center bg-clinical-white shadow-lg overflow-hidden">

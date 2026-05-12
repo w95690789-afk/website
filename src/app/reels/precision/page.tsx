@@ -119,7 +119,7 @@ export default function ReelPage() {
             className="absolute bottom-16 inset-x-8 z-50 text-center"
           >
             <a 
-              href="https://wa.me/573245134768"
+              href="https://wa.me/573115212600"
               target="_blank"
               className="w-full py-6 bg-white text-primary rounded-2xl font-black text-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-primary/20 hover:scale-105 transition-transform"
             >

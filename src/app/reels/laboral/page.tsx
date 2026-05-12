@@ -118,7 +118,7 @@ export default function LaboralReel() {
             className="absolute bottom-16 inset-x-8 z-50"
           >
             <a 
-              href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20necesito%20mi%20examen%20de%20ingreso%20hoy%20mismo."
+              href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20necesito%20mi%20examen%20de%20ingreso%20hoy%20mismo."
               target="_blank"
               className="block w-full py-6 bg-white text-slate rounded-2xl font-black text-2xl shadow-2xl transition-all active:scale-95"
             >

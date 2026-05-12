@@ -11,7 +11,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-24 bg-clinical-white border-y border-slate/5">
+    <section className="py-12 lg:py-20 bg-clinical-white border-y border-slate/5">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {stats.map((stat, i) => (

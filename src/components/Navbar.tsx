@@ -38,7 +38,7 @@ export default function Navbar() {
           <a href="#servicios" className="hover:text-primary transition-colors">Servicios</a>
           <a href="#" className="hover:text-primary transition-colors">Especialistas</a>
           <a 
-            href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
+            href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-slate text-white rounded-xl font-bold font-outfit text-sm hover:bg-primary transition-all shadow-lg shadow-slate/10 active:scale-95"

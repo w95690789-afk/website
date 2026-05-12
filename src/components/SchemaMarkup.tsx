@@ -7,7 +7,7 @@ export default function SchemaMarkup() {
     description:
       "Centro de diagnóstico por imagen con tecnología de vanguardia en Teusaquillo, Bogotá. Ecografías, rayos X digitales y salud ocupacional con resultados en 15 minutos.",
     url: "https://ecomedica.co",
-    telephone: "+573245134768",
+    telephone: "+573115212600",
     email: "info@ecomedica.co",
     image: "https://ecomedica.co/logo.png",
     logo: "https://ecomedica.co/logo.png",
@@ -30,15 +30,9 @@ export default function SchemaMarkup() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         opens: "07:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "07:00",
-        closes: "13:00",
+        closes: "19:00",
       },
     ],
     medicalSpecialty: [
@@ -89,7 +83,7 @@ export default function SchemaMarkup() {
     description:
       "Centro de diagnóstico médico en Teusaquillo, Bogotá. Ecografías de alta claridad, rayos X digitales y laboratorio clínico con tecnología avanzada.",
     url: "https://ecomedica.co",
-    telephone: "+573245134768",
+    telephone: "+573115212600",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Calle 34 # 14 - 33",

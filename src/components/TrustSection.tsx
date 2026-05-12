@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function TrustSection() {
   return (
-    <section className="py-32 relative overflow-hidden bg-white">
+    <section className="py-20 lg:py-32 relative overflow-hidden bg-white">
       {/* Background refinement: Subtle geometric accent - hidden on mobile to avoid overflow */}
       <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full bg-primary/2 opacity-20 -skew-x-12 translate-x-1/3 pointer-events-none" />
       
@@ -81,15 +81,15 @@ export default function TrustSection() {
             <div className="grid grid-cols-1 gap-4 mb-10">
               {[
                 { title: "Precisión Superior", desc: "Resultados validados por radiólogos y equipos 4K.", icon: "🎯" },
-                { title: "Seguridad Digital", desc: "Infraestructura protegida y acceso desde su celular.", icon: "🔐" },
-                { title: "Circuito Express", desc: "Ciencia de vanguardia con entrega en 15 minutos.", icon: "⚡" }
+                { title: "Circuito Express", desc: "Ciencia de vanguardia con entrega en 15 minutos.", icon: "⚡" },
+                { title: "Parqueadero Gratis", desc: "Estacionamiento vigilado sin costo para su comodidad.", icon: "🅿️" }
               ].map((item, i) => (
                 <motion.div 
                   key={i} 
                   whileHover={{ x: 10 }}
                   className="flex items-start gap-5 p-6 bg-slate/2 rounded-[2rem] border border-slate/5 hover:bg-slate/5 hover:border-primary/10 transition-all cursor-default"
                 >
-                  <div className="text-2xl mt-1">{item.icon}</div>
+                  <div className="text-2xl flex-shrink-0">{item.icon}</div>
                   <div>
                     <h4 className="font-bold text-slate text-xs uppercase tracking-widest mb-1 opacity-40">{item.title}</h4>
                     <p className="text-lg font-outfit font-bold text-slate/90 leading-tight">{item.desc}</p>

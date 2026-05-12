@@ -23,11 +23,11 @@ export default function CTA() {
               <span className="italic">seguir pidiendo cita.</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/80 mb-14 max-w-2xl mx-auto font-inter">
-              Atención inmediata en el eje médico de Teusaquillo. Sin filas, sin complicaciones y con resultados definitivos el mismo día.
+              Atención inmediata en el eje médico de Teusaquillo. Disfrute de una experiencia sin filas ni congestiones, con la seguridad de obtener resultados definitivos hoy mismo.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20de%20inmediato."
+                href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20de%20inmediato."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-12 py-6 bg-white text-primary rounded-[2rem] font-bold text-2xl hover:scale-105 hover:shadow-2xl transition-all shadow-xl flex items-center justify-center"
@@ -35,7 +35,7 @@ export default function CTA() {
                 Agendar por WhatsApp
               </a>
               <a 
-                href="tel:+573245134768"
+                href="tel:+573115212600"
                 className="px-12 py-6 bg-primary-dark/20 backdrop-blur-md border border-white/20 text-white rounded-[2rem] font-bold text-2xl hover:bg-white/10 transition-all flex items-center justify-center"
               >
                 Llamar Directo

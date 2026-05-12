@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
 
-const WHATSAPP_NUMBER = "573245134768";
+const WHATSAPP_NUMBER = "573115212600";
 const DEFAULT_MESSAGE = encodeURIComponent(
   "Hola Ecomedica, quiero agendar una cita para un examen diagnóstico. ¿Cuál es la disponibilidad más próxima?"
 );

@@ -26,7 +26,7 @@ const comparison = [
   },
   {
     feature: "Filas y Espera",
-    ecomedica: "Agendamiento hoy mismo (Sin Filas)",
+    ecomedica: "Atención ágil sin filas ni congestiones",
     others: "Salas colapsadas, esperas de 3 horas",
   },
   {
@@ -64,7 +64,7 @@ export default function Differentiator() {
             ¿Por qué <span className="text-secondary italic">elegirnos?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto font-inter">
-            Nos caracterizamos por brindar resultados de laboratorios, ecografías y rayos X de manera ágil, asegurando oportunidad y calidad en la atención.
+            Garantizamos resultados de alta precisión de manera ágil, con un sistema diseñado para eliminar esperas y asegurar una atención de calidad superior.
           </p>
         </motion.div>
 

@@ -44,7 +44,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-32 relative overflow-hidden" id="servicios">
+    <section className="py-20 lg:py-32 relative overflow-hidden" id="servicios">
       
       {/* Symbolic Background: Digital Mastery - Robust Visibility v2.8 */}
       <div className="absolute top-0 right-0 w-full h-[600px] opacity-[0.55] pointer-events-none select-none">

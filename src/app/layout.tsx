@@ -20,6 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ecomedica.co"),
   title: "Ecografías y Rayos X Bogotá | Resultados Express en Teusaquillo | Ecomedica",
   description:
     "Centro de diagnóstico por imagen con tecnología de alta gama clínica en Teusaquillo, Bogotá. Ecografías obstétricas, Doppler, rayos X digitales y salud ocupacional. Resultados en 15 minutos. Desde $90.000 COP.",
@@ -41,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://ecomedica.co",
+    url: "https://www.ecomedica.co",
     siteName: "Ecomedica IPS",
     title: "Ecografías y Rayos X Bogotá | Resultados en 15 min | Ecomedica",
     description:
       "Diagnóstico por imagen con tecnología diagnóstica premium en Teusaquillo. Resultados express. Desde $90.000 COP.",
     images: [
       {
-        url: "https://ecomedica.co/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ecomedica Centro Médico — Diagnóstico de Alta Precisión",
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ecomedica.co",
+    canonical: "https://www.ecomedica.co",
   },
 };
 

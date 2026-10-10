@@ -109,6 +109,45 @@ export default function SchemaMarkup() {
     },
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Se necesita orden médica para realizarse una ecografía en Ecomédica?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No, en Ecomédica atendemos pacientes particulares sin necesidad de orden médica previa. Puedes agendar tu turno prioritario directamente.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto tardan en entregar los resultados de ecografías y rayos X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Contamos con un circuito express: entregamos su informe oficial firmado por médicos especialistas en 15 minutos después de finalizar el examen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuál es el costo de una ecografía particular en Bogotá?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nuestros estudios ecográficos y radiológicos particulares inician desde $90.000 COP con tecnología de alta gama diagnóstica 2D, 3D, 4D y HD.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Dónde está ubicado el Centro Médico Ecomédica y cuál es el horario de atención?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Estamos ubicados en la Calle 34 # 14 - 33, Teusaquillo, Bogotá D.C. Atendemos de lunes a sábado de 7:00 a.m. a 7:00 p.m.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -121,6 +160,12 @@ export default function SchemaMarkup() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
         }}
       />
     </>

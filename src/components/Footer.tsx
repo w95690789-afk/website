@@ -50,6 +50,14 @@ export default function Footer() {
               Teusaquillo, Bogotá D.C.<br />
               <span className="text-xs text-slate/40">Sede Principal — Teusaquillo</span>
             </p>
+            <a 
+              href="https://www.google.com/maps/place/Ecomedica+Centro+M%C3%A9dico+IPS+-+Ecograf%C3%ADas+y+Rayos+X+Teusaquillo/@4.6228039,-74.0698246,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline mt-2"
+            >
+              📍 Ver en Google Maps / Cómo llegar →
+            </a>
             <div className="mt-6 flex flex-col gap-4">
               <div className="flex items-center gap-3">
                 <a 
@@ -86,15 +94,15 @@ export default function Footer() {
         {/* Google Maps Embed Section */}
         <div className="w-full h-80 rounded-[2rem] overflow-hidden border border-slate/5 mb-20 shadow-inner bg-slate/5 grayscale hover:grayscale-0 transition-all duration-700">
           <iframe 
-            title="Ubícanos en Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7154947963383!2d-74.07252272412871!3d4.627192342131908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a263fc915f3%3A0xe51a704e6c434771!2sCl.%2034%20%2314-33%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1707920000000!5m2!1ses-419!2sco" 
+            title="Ecomedica Centro Médico IPS en Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.757134304603!2d-74.07239952412882!3d4.622803895351608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9986bfb0d741%3A0x5c525c70d881dd71!2sEcomedica%20Centro%20M%C3%A9dico%20IPS%20-%20Ecograf%C3%ADas%20y%20Rayos%20X%20Teusaquillo!5e0!3m2!1ses-419!2sco!4v1707920000000!5m2!1ses-419!2sco" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen={true} 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            className="opacity-60 hover:opacity-100 transition-opacity"
+            className="opacity-70 hover:opacity-100 transition-opacity"
           ></iframe>
         </div>
 

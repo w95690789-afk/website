@@ -24,8 +24,8 @@ export default function SchemaMarkup() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 4.6225,
-      longitude: -74.0708,
+      latitude: 4.6228039,
+      longitude: -74.0698246,
     },
     openingHoursSpecification: [
       {
@@ -70,6 +70,7 @@ export default function SchemaMarkup() {
       bestRating: "5",
     },
     sameAs: [
+      "https://www.google.com/maps/place/Ecomedica+Centro+M%C3%A9dico+IPS+-+Ecograf%C3%ADas+y+Rayos+X+Teusaquillo/@4.6228039,-74.0698246,17z",
       "https://www.facebook.com/ecomedica",
       "https://www.instagram.com/ecomedica",
     ],
@@ -78,11 +79,11 @@ export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://ecomedica.co/#business",
-    name: "Ecomedica Centro Medico",
+    "@id": "https://www.ecomedica.co/#business",
+    name: "Ecomedica Centro Médico IPS - Ecografías y Rayos X Teusaquillo",
     description:
       "Centro de diagnóstico médico en Teusaquillo, Bogotá. Ecografías de alta claridad, rayos X digitales y laboratorio clínico con tecnología avanzada.",
-    url: "https://ecomedica.co",
+    url: "https://www.ecomedica.co",
     telephone: "+573115212600",
     address: {
       "@type": "PostalAddress",
@@ -94,16 +95,16 @@ export default function SchemaMarkup() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 4.6225,
-      longitude: -74.0708,
+      latitude: 4.6228039,
+      longitude: -74.0698246,
     },
-    hasMap: "https://maps.google.com/?cid=ECOMEDICA_CID",
+    hasMap: "https://maps.google.com/?cid=6652494957640244593",
     areaServed: {
       "@type": "GeoCircle",
       geoMidpoint: {
         "@type": "GeoCoordinates",
-        latitude: 4.6225,
-        longitude: -74.0708,
+        latitude: 4.6228039,
+        longitude: -74.0698246,
       },
       geoRadius: "7000",
     },

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { trackEvent } from "@/lib/gtag";
 
 export default function Footer() {
   const WHATSAPP_NUMBER = "573115212600";
@@ -54,6 +55,13 @@ export default function Footer() {
               href="https://www.google.com/maps/place/Ecomedica+Centro+M%C3%A9dico+IPS+-+Ecograf%C3%ADas+y+Rayos+X+Teusaquillo/@4.6228039,-74.0698246,17z"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                trackEvent({
+                  action: "directions_click",
+                  category: "maps",
+                  label: "footer_google_maps",
+                });
+              }}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline mt-2"
             >
               📍 Ver en Google Maps / Cómo llegar →
@@ -64,6 +72,14 @@ export default function Footer() {
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackEvent({
+                      action: "generate_lead",
+                      category: "whatsapp",
+                      label: "footer_whatsapp_icon",
+                      lead_type: "footer",
+                    });
+                  }}
                   className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-lg shadow-primary/5"
                   aria-label="WhatsApp Ecomedica"
                 >
@@ -71,7 +87,20 @@ export default function Footer() {
                 </a>
                 <div>
                   <p className="text-xs text-slate/40 font-inter">WhatsApp / Móvil</p>
-                  <a href={`tel:+${WHATSAPP_NUMBER}`} className="text-slate font-bold font-outfit text-xl hover:text-primary transition-colors">+57 311 521 2600</a>
+                  <a 
+                    href={`tel:+${WHATSAPP_NUMBER}`}
+                    onClick={() => {
+                      trackEvent({
+                        action: "click_to_call",
+                        category: "phone",
+                        label: "footer_movil",
+                        phone_number: `+${WHATSAPP_NUMBER}`,
+                      });
+                    }}
+                    className="text-slate font-bold font-outfit text-xl hover:text-primary transition-colors"
+                  >
+                    +57 311 521 2600
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -80,7 +109,20 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-xs text-slate/40 font-inter">Línea Fija</p>
-                  <a href="tel:6013202045" className="text-slate font-bold font-outfit text-xl hover:text-primary transition-colors">601 320 2045</a>
+                  <a 
+                    href="tel:6013202045"
+                    onClick={() => {
+                      trackEvent({
+                        action: "click_to_call",
+                        category: "phone",
+                        label: "footer_fijo",
+                        phone_number: "6013202045",
+                      });
+                    }}
+                    className="text-slate font-bold font-outfit text-xl hover:text-primary transition-colors"
+                  >
+                    601 320 2045
+                  </a>
                 </div>
               </div>
               <div className="mt-2 flex items-center gap-2 text-primary font-bold text-sm">

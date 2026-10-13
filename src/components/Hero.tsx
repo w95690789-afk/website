@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { trackEvent } from "@/lib/gtag";
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-44">
@@ -47,6 +48,16 @@ export default function Hero() {
                 href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20prioritaria."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent({
+                    action: "generate_lead",
+                    category: "whatsapp",
+                    label: "hero_turno_prioritario",
+                    lead_type: "hero",
+                    value: 90000,
+                    currency: "COP",
+                  });
+                }}
                 className="px-10 py-5 bg-primary text-white rounded-2xl font-bold text-xl hover:shadow-[0_20px_40px_rgba(15,118,110,0.3)] transition-all active:scale-95 group flex items-center justify-center"
               >
                 Asegurar mi turno prioritario

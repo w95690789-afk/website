@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { trackEvent } from "@/lib/gtag";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,6 +42,14 @@ export default function Navbar() {
             href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              trackEvent({
+                action: "generate_lead",
+                category: "whatsapp",
+                label: "navbar_desktop",
+                lead_type: "navbar",
+              });
+            }}
             className="px-6 py-3 bg-slate text-white rounded-xl font-bold font-outfit text-sm hover:bg-primary transition-all shadow-lg shadow-slate/10 active:scale-95"
           >
             Agendar Cita
@@ -69,9 +78,17 @@ export default function Navbar() {
               <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
               <a href="#" onClick={() => setIsOpen(false)}>Especialistas</a>
               <a 
-                href="https://wa.me/573245134768?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
+                href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent({
+                    action: "generate_lead",
+                    category: "whatsapp",
+                    label: "navbar_mobile",
+                    lead_type: "navbar",
+                  });
+                }}
                 className="w-full py-4 bg-primary text-white rounded-xl font-bold text-center"
               >
                 Agendar por WhatsApp

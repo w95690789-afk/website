@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { trackEvent } from "@/lib/gtag";
 
 export default function CTA() {
   return (
@@ -30,12 +31,30 @@ export default function CTA() {
                 href="https://wa.me/573115212600?text=Hola%20Ecomedica,%20quisiera%20agendar%20una%20cita%20de%20inmediato."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent({
+                    action: "generate_lead",
+                    category: "whatsapp",
+                    label: "cta_bottom_whatsapp",
+                    lead_type: "bottom_cta",
+                    value: 90000,
+                    currency: "COP",
+                  });
+                }}
                 className="px-12 py-6 bg-white text-primary rounded-[2rem] font-bold text-2xl hover:scale-105 hover:shadow-2xl transition-all shadow-xl flex items-center justify-center"
               >
                 Agendar por WhatsApp
               </a>
               <a 
                 href="tel:+573115212600"
+                onClick={() => {
+                  trackEvent({
+                    action: "click_to_call",
+                    category: "phone",
+                    label: "cta_bottom_call",
+                    phone_number: "+573115212600",
+                  });
+                }}
                 className="px-12 py-6 bg-primary-dark/20 backdrop-blur-md border border-white/20 text-white rounded-[2rem] font-bold text-2xl hover:bg-white/10 transition-all flex items-center justify-center"
               >
                 Llamar Directo

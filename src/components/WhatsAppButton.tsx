@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 const WHATSAPP_NUMBER = "573115212600";
 const DEFAULT_MESSAGE = encodeURIComponent(
@@ -81,6 +82,16 @@ export default function WhatsAppButton() {
                     href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(action.message)}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      trackEvent({
+                        action: "generate_lead",
+                        category: "chatbot",
+                        label: action.label,
+                        lead_type: action.label,
+                        value: action.label.includes("Ecografía") ? 90000 : undefined,
+                        currency: "COP",
+                      });
+                    }}
                     className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate/5 hover:bg-[#25D366]/10 transition-all group cursor-pointer border border-transparent hover:border-[#25D366]/20"
                   >
                     <span className="text-xl">{action.emoji}</span>
@@ -100,6 +111,14 @@ export default function WhatsAppButton() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackEvent({
+                      action: "generate_lead",
+                      category: "chatbot",
+                      label: "mensaje_libre",
+                      lead_type: "libre",
+                    });
+                  }}
                   className="flex items-center justify-center gap-2 w-full p-4 bg-[#25D366] text-white rounded-2xl font-bold hover:bg-[#20BD5A] transition-all active:scale-[0.98]"
                 >
                   <MessageCircle className="w-5 h-5" />
@@ -113,7 +132,17 @@ export default function WhatsAppButton() {
 
       {/* Main FAB */}
       <motion.button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          const nextState = !isOpen;
+          setIsOpen(nextState);
+          if (nextState) {
+            trackEvent({
+              action: "chatbot_opened",
+              category: "engagement",
+              label: "floating_widget",
+            });
+          }
+        }}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 2, type: "spring", stiffness: 200 }}
